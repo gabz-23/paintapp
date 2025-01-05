@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Paing</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main class="container">
+            <div class="tools">
+                <div>
+                    <div class="header">
+                        <h2>Paint de chill</h2>
+                        <img src="icons/paint-icon.png" alt="" />
+                    </div>
+
+                    <div class="tools-btn">
+                        <button id="pencil" class="tool">
+                            <img src="icons/pencil.png" alt="pencil" />
+                        </button>
+                        <button id="eraser" class="tool">
+                            <img src="icons/eraser.png" alt="eraser" />
+                        </button>
+                        <button id="picker" class="tool">
+                            <img src="icons/color-picker.png" alt="picker" />
+                        </button>
+                        <button id="square" class="tool">
+                            <img src="icons/square.png" alt="square" />
+                        </button>
+                        <button id="circle" class="tool">
+                            <img src="icons/circle.png" alt="circle" />
+                        </button>
+                        <!-- <button id="paint-bucket" class="tool">
+                            <img src="icons/paint-bucket.png" alt="paint-bucket" />
+                        </button> -->
+                    </div>
+
+                    <div class="colors">
+                        <p>Color</p>
+                        <input type="color" id="color-picker" />
+                    </div>
+                </div>
+
+                <div class="btn-group">
+                    <button id="clear-canvas">Limpiar Lienzo</button>
+                    <button id="save-image">Guardar</button>
+                </div>
+            </div>
+
+            <canvas id="canvas" width="640" height="550"></canvas>
+        </main>
+        <script src="./app.js"></script>
+    </body>
+</html>

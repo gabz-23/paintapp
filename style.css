@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #0c9963;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+canvas {
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+button {
+    padding: 20px;
+    background: #e1e1e1;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+}
+
+.tools {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    margin-right: 20px;
+    border-radius: 4px;
+    padding: 10px 15px 25px 15px;
+    width: 200px;
+
+    .header {
+        display: flex;
+        align-items: center;
+        color: #222222;
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        img {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+        }
+    }
+}
+.tools-btn {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+
+    button {
+        border-radius: 8px;
+        background-color: #eeeeee;
+        font-weight: 600;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+    }
+    button img {
+        width: 20px;
+        height: 20px;
+    }
+
+    button.active {
+        border: 3px solid #14af50;
+    }
+}
+
+.colors {
+    font-size: 14px;
+    font-weight: 800;
+    color: #3b3841;
+
+    p {
+        margin-bottom: 3px;
+    }
+
+    input[type='color'] {
+        background: transparent;
+        border: none;
+        height: 40px;
+        width: 40px;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+    }
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: column;
+
+    button {
+        border-radius: 2px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    button:not(:last-child) {
+        margin-bottom: 10px;
+        color: #ffffff;
+        background-color: #14af50;
+        transition: all 0.2s ease;
+    }
+    button:not(:last-child):hover {
+        background-color: #109643;
+    }
+
+    button:last-child {
+        color: #14af50;
+        background-color: #ffffff;
+        border: 4px solid #14af50;
+        transition: all 0.2s ease;
+    }
+
+    button:last-child:hover {
+        color: #ffff;
+        background-color: #14af50;
+    }
+}
