@@ -2,6 +2,8 @@
 
 Aplicacion de paint hecha con CSS y Javascript
 
+![alt text](icons/photoapp.jpg)
+
 ### Herramientas Actuales
 
 -   Pincel
@@ -11,4 +13,10 @@ Aplicacion de paint hecha con CSS y Javascript
 -   Circulo
 -   Colores
 
-> Se pueden hacer cambios hacia atras con CTRL + Z
+### Funciones
+
+-   hacer cambios hacia atras con CTRL + Z
+
+-   Limpiar lienzo por completo
+
+-   Guardar el lienzo como un PNG
